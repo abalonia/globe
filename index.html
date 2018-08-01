@@ -1034,10 +1034,11 @@ function changeCountry(key, init) {
 	
 	function myFunction() {
     return key;
-	window.parent.postMessage(myFunction(), "*");
+	
       
 }
 	document.getElementById("demo").innerHTML = myFunction();
+	window.parent.postMessage(myFunction(), "*");
 	
 	if (animations.countries.selected !== undefined) {
 		animations.countries.selected.visible = false;
