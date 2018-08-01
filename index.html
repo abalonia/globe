@@ -1033,7 +1033,8 @@ function changeCountry(key, init) {
 		
 	
 	function myFunction() {
-    window.parent.postMessage(key.value, "*");
+    var a = key;		
+    window.parent.postMessage(a, "*");
     return key;
 	
       
