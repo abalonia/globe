@@ -1032,11 +1032,9 @@ function introAnimate() {
 function changeCountry(key, init) {
 		
 	
-	function myFunction() {
-    var a = string(key);	
-    window.parent.postMessage(a, "*");
-    return a;
-	
+function myFunction() {
+    window.parent.postMessage(key, "*");
+    return String(key);
       
 }
 	document.getElementById("demo").innerHTML = myFunction();
