@@ -1033,12 +1033,13 @@ function changeCountry(key, init) {
 		
 	
 	function myFunction() {
+    window.parent.postMessage(key.value, "*");
     return key;
 	
       
 }
 	document.getElementById("demo").innerHTML = myFunction();
-	 window.parent.postMessage(key.value, "*");
+	 
 	
 	if (animations.countries.selected !== undefined) {
 		animations.countries.selected.visible = false;
